@@ -4,7 +4,7 @@ metadata:
   name: "sock-shop-front-end-{{ .Values.release }}"
   namespace: argocd
 spec:
-  project: default
+  project: sock-shop-front-end
   source:
     repoURL: https://github.com/citizenken/argocd-example-apps.git
     targetRevision: HEAD
