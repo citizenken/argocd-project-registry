@@ -6,9 +6,15 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/citizenken/argocd-applications.git
+    repoURL: https://github.com/citizenken/argocd-project-registry.git
     targetRevision: HEAD
     path: apps
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
+    # Sync policy
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
+    validate: true

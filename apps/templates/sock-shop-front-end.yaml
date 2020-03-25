@@ -12,16 +12,25 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: "sock-shop-front-end-{{ .Values.release }}"
+
+  # Sync policy
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
+    validate: true
+
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
   name: "sock-shop-front-end-{{ .Values.release }}"
+
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: my-project
+  name: sock-shop-front-end
   namespace: argocd
 spec:
   description: Example Project
