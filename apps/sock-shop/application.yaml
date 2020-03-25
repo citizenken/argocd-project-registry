@@ -1,8 +1,9 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: "sock-shop-front-end-{{ .Values.release }}"
+  name: "sock-shop-front-end"
   namespace: argocd
+  release: stable
 spec:
   project: sock-shop-front-end
   source:
@@ -11,7 +12,7 @@ spec:
     path: helm-socks-frontend
   destination:
     server: https://kubernetes.default.svc
-    namespace: "sock-shop-front-end-{{ .Values.release }}"
+    namespace: "sock-shop-front-end"
 
   # Sync policy
   syncPolicy:

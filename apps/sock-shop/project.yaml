@@ -9,5 +9,5 @@ spec:
   sourceRepos:
   - '*'
   destinations:
-  - namespace: sock-shop-front-end-*
+  - namespace: sock-shop-front-end*
     server: https://kubernetes.default.svc
