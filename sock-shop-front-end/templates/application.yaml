@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: "{{ .Chart.Name }}-{{ .Values.release }}"
+  namespace: "{{ .Chart.Name }}-{{ .Values.release }}"
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/citizenken/argocd-example-apps.git
+    targetRevision: HEAD
+    path: helm-socks-frontend
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: "{{ .Chart.Name }}-{{ .Values.release }}"
