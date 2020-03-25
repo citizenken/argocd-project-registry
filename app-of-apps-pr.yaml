@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/citizenken/argocd-project-registry.git
     targetRevision: HEAD
-    path: apps
+    path: pr-apps
     directory:
       recurse: true
   destination:
