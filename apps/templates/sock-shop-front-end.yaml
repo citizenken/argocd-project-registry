@@ -37,4 +37,7 @@ spec:
   # Allow manifests to deploy from any Git repos
   sourceRepos:
   - '*'
+  destinations:
+  - namespace: sock-shop-front-end-*
+    server: https://kubernetes.default.svc
 
