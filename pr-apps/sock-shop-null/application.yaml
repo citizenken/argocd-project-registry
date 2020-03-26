@@ -12,10 +12,11 @@ spec:
     targetRevision: HEAD
     path: helm-socks-frontend
     helm:
-    - name: image.tag
-      value: kpetti-k8s-argo-test-null-32
-    - name: image.repository
-      value: 428791060841.dkr.ecr.us-east-1.amazonaws.com/argocd-test-repo:kpetti-k8s-argo-test-null-32
+      parameters:
+      - name: image.tag
+        value: kpetti-k8s-argo-test-null-35
+      - name: image.repository
+        value: 428791060841.dkr.ecr.us-east-1.amazonaws.com/argocd-test-repo:kpetti-k8s-argo-test-null-35
   destination:
     server: https://kubernetes.default.svc
     namespace: sock-shop-front-end-null
