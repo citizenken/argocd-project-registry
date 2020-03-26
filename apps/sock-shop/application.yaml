@@ -5,6 +5,7 @@ metadata:
   namespace: argocd
   labels:
     release: stable
+    buildNumber: '6'
 spec:
   project: sock-shop-front-end
   source:
