@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
   labels:
     release: pr
-    buildNumber: '10'
+    buildNumber: '11'
 spec:
   project: sock-shop-front-end
   source:
