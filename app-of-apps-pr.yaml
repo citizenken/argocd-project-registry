@@ -19,6 +19,6 @@ spec:
     # Sync policy
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: false
     validate: true
