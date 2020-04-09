@@ -4,7 +4,7 @@ metadata:
   name: sock-shop-front-end
   labels:
     release: stable
-    buildNumber: '12'
+    buildNumber: '13'
 spec:
   project: default
   source:
