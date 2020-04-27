@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/citizenken/argocd-project-registry.git
-    targetRevision: HEAD
-    path: apps
+    repoURL: https://github.com/citizenken/cluster-A-qa-argocd-registry.git
+    targetRevision: kustomize_test
+    path: stable
     directory:
       recurse: true
   destination:
