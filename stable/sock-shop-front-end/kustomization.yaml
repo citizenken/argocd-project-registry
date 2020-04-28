@@ -2,12 +2,6 @@ bases:
   - github.com/citizenken/front-end/manifest-config/argocd-kustomize-base?ref=chart_testing
 
 patches:
-  - patch: |-
-      - op: replace
-        path: /spec/source/targetRevision
-        value: v1
-      - op: replace
-        path: /spec/source/helm/valueFiles
-        value: ['qa-values.yaml']
+  - path: patch.yaml
     target:
       kind: Application
