@@ -8,6 +8,6 @@ patches:
         value: v1
       - op: replace
         path: /spec/source/helm/valueFiles
-        value: qa-values.yaml
+        value: ['qa-values.yaml']
     target:
       kind: Application
