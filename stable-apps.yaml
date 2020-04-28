@@ -11,8 +11,6 @@ spec:
     repoURL: https://github.com/citizenken/cluster-A-qa-argocd-registry.git
     targetRevision: kustomize_test
     path: stable
-    # directory:
-    #   recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
