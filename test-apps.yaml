@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/citizenken/argocd-project-registry.git
-    targetRevision: HEAD
+    targetRevision: kustomize_test
     path: test
     directory:
       recurse: true
