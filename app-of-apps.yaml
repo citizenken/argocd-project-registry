@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/citizenken/cluster-A-qa-argocd-registry.git
-    targetRevision: kustomize_test
+    targetRevision: HEAD
     path: stable
   destination:
     server: https://kubernetes.default.svc

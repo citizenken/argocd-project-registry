@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/citizenken/argocd-project-registry.git
-    targetRevision: kustomize_test
+    targetRevision: HEAD
     path: test
   destination:
     server: https://kubernetes.default.svc
