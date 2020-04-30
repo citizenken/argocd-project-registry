@@ -1,0 +1,7 @@
+bases:
+  - github.com/citizenken/front-end/manifest-config/argocd-files?ref=master
+
+patches:
+  - path: patch.yaml
+    target:
+      kind: Application

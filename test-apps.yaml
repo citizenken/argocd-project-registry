@@ -1,24 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: apps-registry
+  name: test-apps
   namespace: argocd
-  labels:
-    release: stable
 spec:
   project: default
   source:
-    repoURL: https://github.com/citizenken/argocd-project-registry.git
+    repoURL: https://github.com/citizenken/cluster-A-qa-argocd-registry.git
     targetRevision: HEAD
-    path: apps
-    directory:
-      recurse: true
+    path: test
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
     # Sync policy
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: false
     validate: true
