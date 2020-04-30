@@ -1,5 +1,5 @@
 bases:
-  - github.com/citizenken/front-end/manifest-config/argocd-files?ref=master
+  - github.com/citizenken/front-end/manifests/argocd-registry-manifests?ref=master
 
 patches:
   - path: patch.yaml
