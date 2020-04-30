@@ -1,0 +1,14 @@
+- op: replace
+  path: /spec/source/targetRevision
+  value: chart_testing_2
+- op: replace
+  path: /spec/source/helm/valueFiles
+  value: ['values.yaml']
+- op: add
+  path: /spec/source/helm/parameters
+  value:
+    - name: namespace
+      value: sock-shop-front-end-2
+- op: replace
+  path: /spec/destination/namespace
+  value: sock-shop-front-end-2
