@@ -1,6 +1,6 @@
 - op: replace
   path: /spec/source/targetRevision
-  value: chart_testing_2
+  value: master
 - op: replace
   path: /spec/source/helm/valueFiles
   value: ['values.yaml']

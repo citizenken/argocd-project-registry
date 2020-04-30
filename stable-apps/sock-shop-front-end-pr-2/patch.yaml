@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/source/targetRevision
+  value: master # replace with chart version deployed in QA
+- op: replace
+  path: /spec/source/helm/valueFiles
+  value: ['values.yaml'] # replace with QA values
