@@ -1,4 +1,8 @@
 #!/bin/bash -ex
+
+# commiting this as an example of a script we can use to auto-generate the kustomization.yaml
+# files in `stable` and `test` repos
+
 # refresh.sh
 # Create a kustomization.yaml and then add all kubernetes YAMLs into resources...
 : "${1:?Specify the directory to put the kustomization file into}"
